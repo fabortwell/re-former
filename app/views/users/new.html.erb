@@ -1,0 +1,21 @@
+<h1>Create a New User</h1>
+
+<form action="/users" method="post" accept-charset="UTF-8" data-turbo="false">
+  <!-- CSRF Token -->
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <!-- Username Field -->
+  <label for="username">Username:</label>
+  <input type="text" name="user[username]" id="username">
+
+  <!-- Email Field -->
+  <label for="email">Email:</label>
+  <input type="email" name="user[email]" id="email">
+
+  <!-- Password Field -->
+  <label for="password">Password:</label>
+  <input type="password" name="user[password]" id="password">
+
+  <!-- Submit Button -->
+  <input type="submit" value="Create User">
+</form>
